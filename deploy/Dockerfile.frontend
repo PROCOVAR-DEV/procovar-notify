@@ -4,7 +4,7 @@
 # vive en frontend/; construir desde la RAÍZ del repo (el contexto necesita
 # frontend/ y deploy/):
 #   docker build -f deploy/Dockerfile.frontend -t notify-frontend --build-arg VITE_API_URL=https://api.tu-dominio.com .
-FROM node:20-alpine AS build
+FROM node:24-alpine AS build
 WORKDIR /web
 
 # Cache de dependencias.

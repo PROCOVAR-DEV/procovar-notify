@@ -126,7 +126,7 @@ func TestEmailSender_SendsOverSMTP(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Send: %v", err)
 	}
-	if !strings.HasSuffix(string(ref), "@qb-notify") {
+	if !strings.HasSuffix(string(ref), "@procovar.cloud") {
 		t.Fatalf("ProviderRef debería ser el Message-ID, got %q", ref)
 	}
 
